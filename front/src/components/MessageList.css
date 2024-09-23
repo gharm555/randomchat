@@ -1,0 +1,41 @@
+/* src/components/MessageList.css */
+
+/* 전체 메시지 리스트 스타일 */
+.message-list {
+	max-height: 400px;
+	overflow-y: auto;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background-color: #f9f9f9;
+	margin-bottom: 20px;
+}
+
+/* 개별 메시지 스타일 */
+.message {
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+/* 내가 보낸 메시지 */
+.my-message {
+	background-color: #d1e7dd;
+	text-align: right;
+	color: #0f5132;
+	margin-left: auto;
+	margin-right: 0;
+	border-top-right-radius: 0;
+}
+
+/* 상대방이 보낸 메시지 */
+.peer-message {
+	background-color: #f8d7da;
+	text-align: left;
+	color: #842029;
+	margin-left: 0;
+	margin-right: auto;
+	border-top-left-radius: 0;
+}
