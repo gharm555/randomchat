@@ -6,7 +6,7 @@ import ChatInput from "./components/ChatInput";
 import MessageList from "./components/MessageList";
 import "./App.css";
 
-const socket = io("http://localhost:4000");
+const socket = io("http://3.36.207.231:4000");
 
 function App() {
 	const [messages, setMessages] = useState([]);

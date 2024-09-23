@@ -2,12 +2,12 @@ const express = require("express");
 const http = require("http");
 const socketIo = require("socket.io");
 const { v4: uuidv4 } = require("uuid");
-
+const port = process.env.PORT || 4000;
 const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
 	cors: {
-		origin: "http://localhost:3000", // 클라이언트 서버 주소
+		origin: "https://gharm555.github.io/randomchat/", // 클라이언트 서버 주소
 		methods: ["GET", "POST"],
 		credentials: true,
 	},
@@ -81,6 +81,6 @@ io.on("connection", (socket) => {
 	});
 });
 
-server.listen(4000, () => {
-	console.log("Listening on port 4000");
+server.listen(port, () => {
+	console.log("Listening on port " + port);
 });
