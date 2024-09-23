@@ -1,25 +1,31 @@
-/* src/components/ChatInput.css */
-
+/* 채팅 입력창 */
 .chat-input {
+	position: relative;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	margin: 20px;
+	align-items: center; /* 인풋창과 버튼을 세로 중앙 정렬 */
+	margin: 1.25rem 0;
 }
 
 .chat-input input {
-	width: 80%;
-	padding: 10px;
+	width: 80%; /* 너비를 줄여 버튼 공간 확보 */
+	padding: 0.625rem;
 	border: 1px solid #ccc;
-	border-radius: 5px;
+	border-radius: 0.3125rem;
 }
 
 .chat-input button {
-	padding: 10px 20px;
+	width: 18%; /* 버튼 크기 */
+	padding: 0.625rem;
 	background-color: #28a745;
 	color: white;
 	border: none;
-	border-radius: 5px;
+	border-radius: 0.3125rem;
 	cursor: pointer;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center; /* 버튼 내 텍스트를 중앙에 맞춤 */
 }
 
 .chat-input button:hover {

@@ -1,23 +1,26 @@
-/* src/components/MessageList.css */
-
 /* 전체 메시지 리스트 스타일 */
 .message-list {
 	max-height: 400px;
+	min-height: 400px;
 	overflow-y: auto;
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 10px;
 	background-color: #f9f9f9;
 	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column; /* 세로 정렬 */
 }
 
 /* 개별 메시지 스타일 */
 .message {
-	margin: 10px 0;
+	margin: 5px 0; /* 위아래 여백 추가 */
 	padding: 10px;
 	border-radius: 10px;
 	font-size: 14px;
 	line-height: 1.5;
+	word-break: break-word; /* 긴 단어 줄바꿈 처리 */
+	max-width: 60%; /* 메시지 너비가 화면의 60%를 넘지 않도록 */
 }
 
 /* 내가 보낸 메시지 */
@@ -25,9 +28,7 @@
 	background-color: #d1e7dd;
 	text-align: right;
 	color: #0f5132;
-	margin-left: auto;
-	margin-right: 0;
-	border-top-right-radius: 0;
+	align-self: flex-end; /* 오른쪽 정렬 */
 }
 
 /* 상대방이 보낸 메시지 */
@@ -35,7 +36,21 @@
 	background-color: #f8d7da;
 	text-align: left;
 	color: #842029;
-	margin-left: 0;
-	margin-right: auto;
-	border-top-left-radius: 0;
+	align-self: flex-start; /* 왼쪽 정렬 */
+}
+
+/* 입력 중 메시지 스타일 */
+.typing-message {
+	margin: 5px 0; /* 위아래 여백 추가 */
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 14px;
+	line-height: 1.5;
+	word-break: break-word; /* 긴 단어 줄바꿈 처리 */
+	max-width: 60%; /* 메시지 너비가 화면의 60%를 넘지 않도록 */
+	background-color: #f8d7da; /* 붉은 계열 배경색 (상대방 메시지와 동일한 계열) */
+	color: #842029; /* 붉은 계열 텍스트 색상 */
+	align-self: flex-start; /* 왼쪽 정렬 */
+	font-style: italic; /* 이탤릭체로 차별화 */
+	opacity: 0.7; /* 약간 투명도를 줘서 상대 메시지와 차별화 */
 }
