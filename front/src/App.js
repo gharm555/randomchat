@@ -5,7 +5,7 @@ import ChatInput from "./components/ChatInput";
 import MessageList from "./components/MessageList";
 import "./App.css"; // 스타일을 위한 CSS 파일 임포트
 
-const socket = io("http://localhost:4000");
+const socket = io("http://3.36.207.231:4000"); // 서버 주소로 소켓 연결
 
 function App() {
 	const [messages, setMessages] = useState([]);
