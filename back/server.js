@@ -9,7 +9,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
 	cors: {
-		origin: "*",
+		origin: ["https://gharm555.github.io", "https://randomc.kro.kr"], // 허용할 도메인 명시
 		methods: ["GET", "POST"],
 		credentials: true,
 	},
