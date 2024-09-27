@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/randomchat/static/css/main.b7937852.css",
+    "main.css": "/randomchat/static/css/main.25955df5.css",
     "main.js": "/randomchat/static/js/main.0fd81117.js",
     "static/js/206.a9786cce.chunk.js": "/randomchat/static/js/206.a9786cce.chunk.js",
     "index.html": "/randomchat/index.html"
   },
   "entrypoints": [
-    "static/css/main.b7937852.css",
+    "static/css/main.25955df5.css",
     "static/js/main.0fd81117.js"
   ]
 }
